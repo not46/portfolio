@@ -30,7 +30,7 @@ const Skills = () => {
           <div
             className="col-span-12 lg:col-span-4 row-span-4 flex flex-col justify-end items-start p-5 bg-cover bg-center bg-no-repeat rounded-lg relative"
             style={{
-              backgroundImage: "url('videoEdit.jpg')",
+              backgroundImage: "url('https://res.cloudinary.com/dgymvrggo/image/upload/v1730465772/videoEdit_jmomlw.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -43,7 +43,7 @@ const Skills = () => {
           <div
             className="col-span-12 lg:col-span-3 row-span-4 flex flex-col justify-end items-start p-5 bg-cover bg-center bg-no-repeat rounded-lg relative"
             style={{
-              backgroundImage: "url('brand.jpg')",
+              backgroundImage: "url('https://res.cloudinary.com/dgymvrggo/image/upload/v1730465772/brand_raerew.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -56,7 +56,7 @@ const Skills = () => {
           <div
             className="col-span-12 lg:col-span-3 row-span-4 flex flex-col justify-end items-start p-5 bg-cover bg-center bg-no-repeat rounded-lg relative"
             style={{
-              backgroundImage: "url('/artWork/FINAL ghy 2.jpg')",
+              backgroundImage: "url('https://res.cloudinary.com/dgymvrggo/image/upload/v1730460783/OVERDUE-2_nw98su.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -69,7 +69,7 @@ const Skills = () => {
           <div
             className="col-span-12 lg:col-span-4 row-span-4 flex flex-col justify-end items-start p-5 bg-cover bg-center bg-no-repeat rounded-lg relative"
             style={{
-              backgroundImage: "url('/thumbnails/Ipl 2.jpg')",
+              backgroundImage: "url('https://res.cloudinary.com/dgymvrggo/image/upload/v1730461328/Ipl_2_m5a1dy.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
