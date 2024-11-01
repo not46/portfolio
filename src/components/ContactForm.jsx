@@ -51,7 +51,7 @@ const ContactForm = () => {
           
         </div>
 
-        <div className="w-full lg:w-1/2 bg-white p-6 rounded-lg shadow-md">
+        <div className="w-full lg:w-1/2 bg-white p-3 rounded-lg shadow-md">
           <form className="space-y-6">
             <div className="relative">
               <input
