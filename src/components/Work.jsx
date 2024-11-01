@@ -28,7 +28,7 @@ function Work() {
   return (
     <div className="flex flex-col items-center justify-center gap-2">
       <h1 className="text-2xl font-bold  underline">Work</h1>
-      <div className="flex gap-5 items-center justify-center mb-1">
+      <div className="flex gap-3 items-center justify-center mb-1">
       <button
           onClick={() => setSelectedWork("youtube")}
           className={`${
