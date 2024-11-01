@@ -57,7 +57,7 @@ function Work() {
               : " font-semibold "
           }  hover:scale-110`}
         >
-          Creative-Work
+          Creative
         </button>
         <button
           onClick={() => setSelectedWork("logo")}
