@@ -7,8 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 const ContactForm = () => {
   return (
-    <section className="container mx-auto px-6 lg:px-10">
-      <div className="flex flex-col lg:flex-row gap-10 items-start  p-12 rounded-lg ">
+    <section className="container mx-auto px-1 lg:px-10">
+      <div className="flex flex-col lg:flex-row gap-10 items-start  p-5 rounded-lg ">
         <div className="w-full lg:w-1/2 space-y-4">
           <h2 className="text-4xl font-semibold leading-tight ">Get in Touch</h2>
           <p className="text-lg leading-relaxed">
@@ -51,7 +51,7 @@ const ContactForm = () => {
           
         </div>
 
-        <div className="w-full lg:w-1/2 bg-white p-3 rounded-lg shadow-md">
+        <div className="w-full lg:w-1/2 bg-white p-4 rounded-lg shadow-md">
           <form className="space-y-6">
             <div className="relative">
               <input
