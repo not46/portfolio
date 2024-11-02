@@ -26,14 +26,14 @@ const About = () => {
               {/* Social Media Icons */}
               <div className="flex justify-end space-x-4 mt-4 mr-4">
                 <Link
-                  to="/website/social/facebook"
+                  to="https://www.facebook.com/profile.php?id=100090172245298&mibextid=ZbWKwL"
                   target="_blank"
                   aria-label="Facebook"
                 >
                   <FaFacebookF className="text-[#1877F2] text-2xl" />
                 </Link>
                 <Link
-                  href="/website/social/instagram"
+                  to="https://www.instagram.com/bibekdhakal.in/profilecard/?igsh=MTZ1NnJhbWNmcTY1bA=="
                   target="_blank"
                   aria-label="Instagram"
                 >
@@ -44,13 +44,7 @@ const About = () => {
               <div className="my-8">
                 <hr className="w-full border-gray-300" />
               </div>
-              {/* Contact Button */}
-              <a
-                href="#contact"
-                className="btn btn-lg bg-blue-600 font-semibold text-white ml-4 py-2 px-8 rounded-full hover:bg-blue-700 transition"
-              >
-                Hire Me
-              </a>
+              
             </div>
             {/* Background Image (only for large screens) */}
             <div
@@ -67,7 +61,7 @@ const About = () => {
       <section className="s_features py-16  px-6">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-semibold underline mb-4">My Skills</h3>
+            <h3 className="btn btn-lg bg-blue-600 w-[30vw] lg:w-[10vw] font-semibold text-white mx-auto py-2  mb-4 rounded-full hover:bg-blue-700 transition">My Skills</h3>
             <p className="text-lg ">
               List and describe the key features of your solution or service.
             </p>
