@@ -2,7 +2,7 @@ import React from 'react'
 
 function Art() {
   return (
-  <div className="md:flex-row md:flex-wrap md:p-1  md:gap-4 lg:p-4 flex flex-col items-center justify-center gap-3 p-6">
+  <div className="grid gap-5 grid-cols-2 p-4 md:gap-4 md:p-4 lg:grid-cols-4 sm:grid-cols-2">
     <p className='p-1 '>
         <img className='md:w-[40vw] rounded-xl lg:w-[30vw]' src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460786/FINAL_ghy_2_epgrsk.jpg" alt="" />
     </p>
