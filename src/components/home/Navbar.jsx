@@ -10,11 +10,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mx-4 my-4">
+    <nav className="mx-4 my-4 ">
       <div className="h-16 flex justify-between items-center mx-auto border-none px-5 bg-slate-600 rounded-[150px]">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <NavLink to="/"><img className='w-16' src="https://bibekdhakal.odoo.com/web/image/website/1/logo/Bibekdhakal?unique=88d0a55" alt="Logo" /></NavLink>
+          <NavLink to="/"><img className='w-16' src="logo.png" alt="Logo" /></NavLink>
         </div>
 
         {/* Hamburger Icon for Mobile */}
