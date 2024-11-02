@@ -34,7 +34,6 @@ const Footer = () => {
                 <h5 className="text-lg font-semibold">Useful Links</h5>
                 <ul className="list-none space-y-2">
                   <li><NavLink to="/" className="hover:underline">Home</NavLink></li>
-                  <li><NavLink to="#" className="hover:underline">Legal</NavLink></li>
                   <li><NavLink to="/" className="hover:underline">Contact us</NavLink></li>
                 </ul>
               </div>
