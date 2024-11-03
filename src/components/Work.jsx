@@ -27,13 +27,13 @@ function Work() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-2">
-      <h1 className="text-2xl font-bold  underline">Work</h1>
-      <div className="flex gap-3 items-center justify-center mb-1">
+      <h1 className="text-3xl mb-2 font-bold  ">Work</h1>
+      <div className="flex gap-4 items-center justify-center mb-1">
       <button
           onClick={() => setSelectedWork("youtube")}
           className={`${
             selectedWork === "youtube"
-              ? "text-white border-none px-4 rounded-md font-semibold bg-red-400"
+              ? "text-white border-none px-2 rounded-md font-semibold bg-red-600"
               : "font-semibold "
           }  hover:scale-110`}
         >
@@ -43,7 +43,7 @@ function Work() {
           onClick={() => setSelectedWork("art")}
           className={`${
             selectedWork === "art"
-              ? "text-white border-none px-4 rounded-md font-semibold bg-red-400"
+              ? "text-white border-none px-2 rounded-md font-semibold bg-red-600"
               : "font-semibold "
           }  hover:scale-110`}
         >
@@ -53,7 +53,7 @@ function Work() {
           onClick={() => setSelectedWork("creative-work")}
           className={`${
             selectedWork === "creative-work"
-              ? "text-white border-none px-4 rounded-md font-semibold bg-red-400"
+              ? "text-white border-none px-2 rounded-md font-semibold bg-red-600"
               : " font-semibold "
           }  hover:scale-110`}
         >
@@ -63,7 +63,7 @@ function Work() {
           onClick={() => setSelectedWork("logo")}
           className={`${
             selectedWork === "logo"
-              ? "text-white border-none px-4 rounded-md font-semibold bg-red-400"
+              ? "text-white border-none px-2 rounded-md font-semibold bg-red-600"
               : " font-semibold "
           }  hover:scale-110`}
         >
@@ -73,7 +73,7 @@ function Work() {
           onClick={() => setSelectedWork("thumbnails")}
           className={`${
             selectedWork === "thumbnails"
-              ? "text-white border-none px-4 rounded-md font-semibold bg-red-400"
+              ? "text-white border-none px-2 rounded-md font-semibold bg-red-600"
               : " font-semibold "
           }  hover:scale-110`}
         >
