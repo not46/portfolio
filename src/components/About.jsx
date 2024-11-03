@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 const About = () => {
@@ -127,12 +127,12 @@ const About = () => {
               </p>
             </div>
             <div className="lg:w-3/12 text-right">
-              <a
-                href="#contact"
+              <NavLink
+                to="/contact"
                 className="bg-white font-semibold text-blue-600 py-2 px-6 rounded-full hover:bg-gray-100 transition"
               >
                 Hire Me
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
