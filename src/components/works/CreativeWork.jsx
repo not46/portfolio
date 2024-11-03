@@ -1,100 +1,114 @@
-import React from "react";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
-function CreativeWork() {
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="grid gap-5 grid-cols-2 p-4 md:gap-4 md:p-4 lg:grid-cols-4 sm:grid-cols-2">
-      <div className="p-1  ">
-        <img
-          className="w-[250px] h-[220px] rounded-xl object-cover"
-          src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460408/Orange_Delhi_Travel_Instagram_Post_glco3f.jpg"
-          alt=""
-        />
-      </div>
-      <div className="p-1">
-        <img
-          className="w-[250px] h-[220px] rounded-xl object-cover"
-          src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460410/Powerful_Engine_vqj0ns.jpg"
-          alt=""
-        />
-      </div>
-      <div className="p-1">
-        <img
-          className="w-[250px] h-[220px] rounded-xl object-cover"
-          src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460411/Red_and_Yellow_Illustrated_Biryani_Sale_Instagram_Post_my5hg2.jpg"
-          alt=""
-        />
-      </div>
-      <div className="p-1">
-        <img
-          className="w-[250px] h-[220px] rounded-xl object-cover"
-          src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460432/SUN-01_nvuuab.jpg"
-          alt=""
-        />
-      </div>
-      <div className="p-1">
-        <img
-          className="w-[250px] h-[220px] rounded-xl object-cover"
-          src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460449/SUN02_fnnrol.png"
-          alt=""
-        />
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730460440/skipper_bihu_005_xd8c3g.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730461781/nishant_baid_7_ggoakv.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730461750/bbq_durga_puja_4_aumbky.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <img
-          className="w-[250px] h-[220px] rounded-xl object-cover"
-          src="https://res.cloudinary.com/dgymvrggo/image/upload/v1730460406/Black_Red_Simple_Food_Photo_Animated_Video_Your_Story_1080_x_1350_px_q9liax.jpg"
-          alt=""
-        />
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730461723/Bbq_diwali_3_1_jgnkir.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730461592/Hom_bolly_V4_lzkb5o.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730460490/10octfinal_vauoyz.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730460460/Hlw_1_hch6la.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className="p-1">
-        <video className="w-[250px] h-[220px] rounded-xl object-cover" controls>
-          <source src="https://res.cloudinary.com/dgymvrggo/video/upload/v1730460484/MS01062024_sxdwer.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  );
-}
+    <nav className="mx-4 my-4 ">
+      <div className="h-16 flex justify-between items-center mx-auto border-none px-5 bg-slate-600 rounded-[150px]">
+        {/* Logo */}
+        <div className="text-2xl font-bold">
+          <NavLink to="/"><img className='w-16' src="logo.png" alt="Logo" /></NavLink>
+        </div>
 
-export default CreativeWork;
+        {/* Hamburger Icon for Mobile */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-3xl mr-4 p-2 rounded-full focus:outline-none"
+          >
+            {isMenuOpen ? <RxCross2 /> : <RxHamburgerMenu />}
+          </button>
+        </div>
+
+        {/* Links for Desktop */}
+        <ul className="hidden md:flex space-x-7 text-lg items-center">
+          <li>
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => ` ${isActive ? 'hover:bg-slate-200 bg-slate-100  border-0 px-4 py-2 rounded-[100px] text-black' : ''}`}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/about" 
+              className={({ isActive }) => `${isActive ? 'hover:bg-slate-200 bg-slate-100 border-0 px-4 py-2 rounded-[100px] text-black' : ''}`}>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/work" 
+              className={({ isActive }) => ` ${isActive ? 'hover:bg-slate-200 bg-slate-100 border-0 px-4 py-2 rounded-[100px] text-black' : ''}`}>
+              Work
+            </NavLink>
+          </li>
+        </ul>
+
+        {/* Contact Button for Desktop */}
+        <div className="hidden md:block">
+          <NavLink to="/contact" className="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 mr-5">
+            Hire Me
+          </NavLink>
+        </div>
+      </div>
+
+      {/* Mobile Menu with Slide-in Transition */}
+      <div
+        className={`md:hidden fixed top-0 right-0 h-full z-[1000] bg-slate-800 transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'transform translate-x-0' : 'transform translate-x-full'
+        }`}
+        style={{ width: '75%' }}
+      >
+        <div className="flex justify-end p-4">
+          <button onClick={toggleMenu} className="text-3xl p-2 rounded-full focus:outline-none">
+            <RxCross2 />
+          </button>
+        </div>
+        <ul className="flex flex-col space-y-4 text-lg ml-7 mt-4">
+          <li>
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => `text-slate-200  text-lg px-20 py-2 rounded-[100px]  ${isActive ? 'bg-slate-500 hover:bg-slate-400  border-0 px-20 py-2 rounded-[100px] text-white': ''}`} 
+              onClick={toggleMenu}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/about" 
+              className={({ isActive }) => `text-slate-200 px-20 py-2  rounded-[100px] ${isActive ? 'bg-slate-500 hover:bg-slate-400  border-0 px-20 py-2 rounded-[100px] text-white' : ''}`} 
+              onClick={toggleMenu}>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/work" 
+              className={({ isActive }) => `text-slate-200 px-20 py-2  rounded-[100px] ${isActive ? 'bg-slate-500 hover:bg-slate-400  border-0 px-20 py-2 rounded-[100px] text-white' : ''}`} 
+              onClick={toggleMenu}>
+              Work
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/contact" 
+              className="hover:text-black px-20 py-2 bg-blue-600 text-white  rounded-md hover:bg-blue-700" 
+              onClick={toggleMenu}>
+               Hire Me
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
