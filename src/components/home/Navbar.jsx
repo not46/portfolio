@@ -32,21 +32,21 @@ const Navbar = () => {
           <li>
             <NavLink 
               to="/" 
-              className={({ isActive }) => `text-black ${isActive ? 'bg-green-500 border-0 px-4 py-2 rounded-[100px] text-white' : ''}`}>
+              className={({ isActive }) => ` ${isActive ? 'hover:bg-slate-200 bg-slate-100  border-0 px-4 py-2 rounded-[100px] text-black' : ''}`}>
               Home
             </NavLink>
           </li>
           <li>
             <NavLink 
               to="/about" 
-              className={({ isActive }) => `text-black ${isActive ? 'bg-green-500 border-0 px-4 py-2 rounded-[100px] text-white' : ''}`}>
+              className={({ isActive }) => `${isActive ? 'hover:bg-slate-200 bg-slate-100 border-0 px-4 py-2 rounded-[100px] text-black' : ''}`}>
               About
             </NavLink>
           </li>
           <li>
             <NavLink 
               to="/work" 
-              className={({ isActive }) => `text-black ${isActive ? 'bg-green-500 border-0 px-4 py-2 rounded-[100px] text-white' : ''}`}>
+              className={({ isActive }) => ` ${isActive ? 'hover:bg-slate-200 bg-slate-100 border-0 px-4 py-2 rounded-[100px] text-black' : ''}`}>
               Work
             </NavLink>
           </li>
@@ -76,7 +76,7 @@ const Navbar = () => {
           <li>
             <NavLink 
               to="/" 
-              className={({ isActive }) => `text-slate-200 text-lg px-20 py-2 rounded-[100px]  ${isActive ? 'bg-green-500 border-0 px-20 py-2 rounded-[100px] text-white': ''}`} 
+              className={({ isActive }) => `text-slate-200  text-lg px-20 py-2 rounded-[100px]  ${isActive ? 'bg-slate-500 hover:bg-slate-400  border-0 px-20 py-2 rounded-[100px] text-white': ''}`} 
               onClick={toggleMenu}>
               Home
             </NavLink>
@@ -84,7 +84,7 @@ const Navbar = () => {
           <li>
             <NavLink 
               to="/about" 
-              className={({ isActive }) => `text-slate-200 px-20 py-2 rounded-[100px] ${isActive ? 'bg-green-500 border-0 px-20 py-2 rounded-[100px] text-white' : ''}`} 
+              className={({ isActive }) => `text-slate-200 px-20 py-2  rounded-[100px] ${isActive ? 'bg-slate-500 hover:bg-slate-400  border-0 px-20 py-2 rounded-[100px] text-white' : ''}`} 
               onClick={toggleMenu}>
               About
             </NavLink>
@@ -92,7 +92,7 @@ const Navbar = () => {
           <li>
             <NavLink 
               to="/work" 
-              className={({ isActive }) => `text-slate-200 px-20 py-2 rounded-[100px] ${isActive ? 'bg-green-500 border-0 px-20 py-2 rounded-[100px] text-white' : ''}`} 
+              className={({ isActive }) => `text-slate-200 px-20 py-2  rounded-[100px] ${isActive ? 'bg-slate-500 hover:bg-slate-400  border-0 px-20 py-2 rounded-[100px] text-white' : ''}`} 
               onClick={toggleMenu}>
               Work
             </NavLink>
@@ -100,7 +100,7 @@ const Navbar = () => {
           <li>
             <NavLink 
               to="/contact" 
-              className="hover:text-blue-600 px-20 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700" 
+              className="hover:text-black px-20 py-2 bg-blue-600 text-white  rounded-md hover:bg-blue-700" 
               onClick={toggleMenu}>
                Hire Me
             </NavLink>
