@@ -4,9 +4,9 @@ function Work() {
   return (
     <>
       <div className="ml-4">
-        <h1 className="mt-4  text-2xl  mb-5 ml-10">My <span className="font-bold">Work</span></h1>
+        <h1 className="mt-4  text-3xl  mb-5 ml-10">My <span className="font-bold">Work</span></h1>
       </div>
-      <div className="flex items-center lg:px-6 justify-center gap-4 p-1 m-2 flex-wrap md:flex-row ">
+      <div className="flex items-center lg:px-6 justify-center gap-4 p-1 m-2 flex-wrap lg:flex-row md:flex-col ">
         <div className="ml-2 mt-4 ">
           <iframe
            className="md:w-[60vw] lg:w-[30vw] rounded-lg"
