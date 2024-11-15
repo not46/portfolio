@@ -26,7 +26,7 @@ function Work() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2">
+    <div className="flex flex-col items-center justify-center gap-2 mt-28">
       
       <div className="flex gap-4 items-center justify-center mb-1">
       <button
