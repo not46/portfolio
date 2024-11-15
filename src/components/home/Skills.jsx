@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="relative p-8 lg:pt-5 lg:pl-1 lg:pb-6 ">
       <div className="container mx-auto">
-        <h1 className="text-2xl  ml-3 lg:ml-4  mb-4">What I  <span className="font-bold">Offer</span></h1>
+        <h1 className="text-3xl  ml-3 lg:ml-4  mb-4">What I  <span className="font-bold">Offer</span></h1>
        
        
         <div className="grid gap-4 lg:gap-8 grid-cols-12 ">
