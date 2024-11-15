@@ -50,7 +50,7 @@ const About = () => {
             <div
               className="lg:col-span-6 hidden lg:block o_cc o_cc1 o_not_editable bg-cover bg-center"
               style={{
-                backgroundImage: "url('main.jpeg')",
+                backgroundImage: "url('man.jpeg')",
               }}
             ></div>
           </div>
