@@ -9,9 +9,9 @@ import ContactForm from './ContactForm'
 function Home() {
   return (
     <div>
-      <div className="">
+      
       <Welcome />
-      </div>
+    
     
       
       
@@ -23,7 +23,7 @@ function Home() {
       <br />
       <Work />
       
-      <div className="flex items-center justify-center mt-4 mb-4">
+      <div className="flex items-center justify-center mt-4 mb-3">
          <NavLink className="border-none  hover:bg-blue-700 bg-blue-600 p-2 px-4 rounded-md text-white" to="/work">View More</NavLink>
       </div>
       {/* <hr /> */}
