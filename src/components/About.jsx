@@ -6,11 +6,11 @@ const About = () => {
   return (
     <div id="wrap" className="oe_structure oe_empty">
       {/* Hero Section */}
-      <section className="s_text_cover o_colored_level o_full_screen_height o_cc o_cc2 py-5">
+      <section className="s_text_cover o_colored_level o_full_screen_height o_cc o_cc2 py-5 mt-20">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
             {/* About Text Section */}
-            <div className="lg:col-span-6 p-6 z-10  shadow-lg rounded-lg">
+            <div className="lg:col-span-6 p-6 z-1  shadow-lg rounded-lg">
               <h1 className="text-4xl font-bold">Hello, I'm Bibek Dhakal</h1>
               <p className="mt-4">
                 <strong>Video Editor & Graphic Designer</strong>
@@ -61,7 +61,7 @@ const About = () => {
       <section className="s_features py-16  px-6">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h3 className="btn btn-lg text-3xl mb-4 font-semibold">My Skills</h3>
+            <h3 className="btn btn-lg text-3xl mb-4">My Skills</h3>
             <p className="text-lg ">
               List and describe the key features of your solution or service.
             </p>
