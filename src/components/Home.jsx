@@ -19,13 +19,13 @@ function Home() {
       <Work />
       
       <div className="flex items-center justify-center mt-4 mb-4">
-         <NavLink className="border-none  hover:bg-slate-200 bg-slate-100 p-2 px-4 rounded-md text-black" to="/work">View More</NavLink>
+         <NavLink className="border-none  hover:bg-blue-700 bg-blue-600 p-2 px-4 rounded-md text-white" to="/work">View More</NavLink>
       </div>
       {/* <hr /> */}
      <br />
-      <div className="flex flex-col  items-center justify-center mt-5 mb-3">
-          <h1 className='flex flex-col text-2xl font-ligo mb-3'>Featured By</h1>
-          <div className='md:flex md:flex-row lg:gap-9 gap-4 p-3  '>
+      <div className="flex flex-col  items-center justify-center mt-5 mb-3 bg-slate-100">
+          <h1 className='flex flex-col text-3xl font-semibold text-black font-ligo mb-3 mt-3'>Featured By</h1>
+          <div className='md:flex md:flex-row lg:gap-9 gap-4 p-3 mb-3'>
                <p className='shadow-sm bg-gray-100  mb-2'>
                 <img  src="https://bibekdhakal.odoo.com/web/image/444-261d5b26/spm.webp" alt="" />
                </p>
