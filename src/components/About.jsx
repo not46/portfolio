@@ -61,7 +61,7 @@ const About = () => {
       <section className="s_features py-16  px-6">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h3 className="btn btn-lg bg-blue-600 w-[30vw] lg:w-[10vw] font-semibold text-white mx-auto py-2  mb-4 rounded-full hover:bg-blue-700 transition">My Skills</h3>
+            <h3 className="btn btn-lg text-3xl mb-4 font-semibold">My Skills</h3>
             <p className="text-lg ">
               List and describe the key features of your solution or service.
             </p>
