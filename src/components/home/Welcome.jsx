@@ -39,8 +39,8 @@ function Welcome() {
   }, []);
 
   return (
-    <div className="relative w-[90vw] flex items-center justify-center p-8 mx-auto text-center h-[45vh]">
-      <div className="absolute h-[50vh] inset-0 -z-10">
+    <div className="relative w-full  h-screen flex items-center justify-center text-center">
+      <div className="absolute inset-0 -z-10">
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
@@ -49,11 +49,10 @@ function Welcome() {
           muted
           playsInline
         >
-          <source className="rounded-lg" src="https://videos.pexels.com/video-files/2423338/2423338-hd_1920_1080_25fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/2423338/2423338-hd_1920_1080_25fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
-
       <h1 className="smoky-reveal md:w-[50%] text-3xl text-gray-300 font-bold mb-4">
         {text}
         <span className="cursor">|</span>
