@@ -4,7 +4,7 @@ const Youtube = () => {
   return (
     <div id="wrap" className="oe_structure oe_empty p-4">
       {/* Just Assam Things Section */}
-      <section className=" py-2">
+      <section className=" py-2 mb-10 lg:mb-20">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
             <div className="lg:col-span-5">
@@ -53,7 +53,7 @@ const Youtube = () => {
       </section>
 
       {/* Zeroth Drama Section */}
-      <section className=" py-2">
+      <section className=" py-2 mb-10 lg:mb-20">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
             <div className="lg:col-span-5">
